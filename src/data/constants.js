@@ -3,7 +3,8 @@ import visualvault from "../images/visualvault.png"
 import textutils from "../images/textutils.png"
 import inotebook from "../images/inotebook.png"
 import collage from '../images/collage.jpeg'
-// import simpleecommerce from "../images/simpleecommerce.png"
+import simpleecommerce from "../images/simpleecommerce.png"
+import Ecommece from '../images/Ecommerce.png'
 import blog from '../images/Blog.png'
 import doctor from "../images/doctor.png"
 import Quickai from '../images/QuickAi.png'
@@ -120,10 +121,10 @@ export const skills = [
         image:
           "https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg",
       },
-      {
-        name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-      },
+      // {
+      //   name: "Firebase",
+      //   image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      // },
     ],
   },
   // {
@@ -164,6 +165,10 @@ export const skills = [
         image:
           "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
+      {
+        name: "Firebase",
+        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      },
       // {
       //   name: "Vercel",
       //   image:
@@ -184,11 +189,11 @@ export const skills = [
         image:
           "data:image/png;base64,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",
       },
-      {
-        name: "Render",
-        image:
-          "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-      },
+      // {
+      //   name: "Render",
+      //   image:
+      //     "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
+      // },
       // {
       //   name: "Figma",
       //   image:
@@ -371,7 +376,7 @@ export const projects = [
     id: 0,
     title: "Quick.ai",
     date: "July 2025 - Aug 2025",
-    description: 
+    description:
       "An AI-powered web app offering tools like article writing, blog title generation, image editing, and resume review using Google Gemini API. Secured with Clerk auth and built with MERN stack + PostgreSQL.",
     image: Quickai,
     tags: ["React Js", "Express Js", "PostgreSQL", "Clerk", "Gemini AI", "Tailwind CSS"],
@@ -395,17 +400,29 @@ export const projects = [
   },
   {
     id: 10,
-    title: "Blog App",
-    date: "July 2025",
+    title: "Ecommece",
+    date: "april 2025 - May 2025",
     description:
-      "A full-stack blog website with user authentication, blog creation, commenting, liking, sharing, and complete CRUD functionality.",
-    image:blog ,
-    tags: ["React Js", "MongoDB", "Node Js", "Express Js", "Tailwind CSS",],
+      "Developed a full-stack MERN e-commerce platform with Firebase authentication and secure Stripe payment integration. Implemented features like product listing, cart management, order processing, and an admin dashboard for managing users, orders, and inventory.",
+    image: Ecommece,
+    tags: ["React Js", "MongoDB", "Node Js", "Express Js", "Tailwind CSS", "Firebase",],
     category: "android app",
-    github: " https://github.com/awsiyanwaghe/Blog",
+    github: "https://github.com/awsiyanwaghe/SM-E-Commerce",
+    webapp: "https://e-commerce-sami.vercel.app/login",
+  },
+  {
+    id: 3,
+    title: "Blog Website",
+    date: "March 2025  ",
+    description:
+      "A MERN stack-based blog platform enabling users to create, edit, and delete posts, comment on articles, and upload images via Cloudinary. The application features secure user authentication, a responsive modern UI built with TailwindCSS, and a seamless experience across all devices.",
+    image: blog,
+    tags: ["React Js", "MongoDB", "Node Js", "Express Js", "Tailwind CSS", "JWT", "Cloudinary"],
+    category: "web app",
+    github: "https://github.com/awsiyanwaghe/Blog",
     webapp: "https://blog-1-b8t3.onrender.com/",
   },
-  
+
   // {
   //   id: 1,
   //   title: "iNotebook",
@@ -447,23 +464,23 @@ export const projects = [
   //   category: "machine learning",
   //   github: "https://github.com/samipevekar/Textutils-react.git",
   //   webapp: "https://samipevekar.github.io/Textutils-react/",
-    // member: [
-    //   {
-    //     name: "Rishav Chanda",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
+  // member: [
+  //   {
+  //     name: "Rishav Chanda",
+  //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+  //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+  //     github: "https://github.com/rishavchanda/",
+  //   },
+  //   {
+  //     name: "Upasana Chaudhuri",
+  //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+  //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+  //     github: "https://github.com/upasana0710",
+  //   },
+  // ],
   // },
-  
-  
+
+
 ];
 
 export const TimeLineData = [

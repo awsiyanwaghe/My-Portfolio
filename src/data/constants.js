@@ -400,7 +400,7 @@ export const projects = [
     description:
       "A full-stack blog website with user authentication, blog creation, commenting, liking, sharing, and complete CRUD functionality.",
     image:blog ,
-    tags: ["html", "css", "js","node"],
+    tags: ["React Js", "MongoDB", "Node Js", "Express Js", "Tailwind CSS",],
     category: "android app",
     github: " https://github.com/awsiyanwaghe/Blog",
     webapp: "https://blog-1-b8t3.onrender.com/",
